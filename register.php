@@ -12,6 +12,6 @@
 		</style>
 	</head>
 	<body>
-	 
+	  <h1 class = "heading">REGISTER HERE:</h1>
 	</body>
 </html>
