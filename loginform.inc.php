@@ -51,7 +51,7 @@ div. -->
 						 <td><input type="password" required class="form-control"><td>
 					  </tr>&nbsp;
 					  <tr>
-						 <td></td><td><input type = "submit" class = "btn btn-primary "></td><td><a href = "home.php">create account</a></td>
+						 <td></td><td><input type = "submit" class = "btn btn-primary "></td><td><a href = "register.php">create account</a></td>
 					  </tr>
 					 <table></div>
 				</form></div>
