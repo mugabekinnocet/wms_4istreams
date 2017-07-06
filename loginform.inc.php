@@ -43,7 +43,7 @@ div. -->
 				<div><form method="POST" action = "Products_received.html">
 					<div><table style="margin:auto;" class="table table ">
 					  <tr>
-						 <td><label>Username</label></td>
+						 <td><label>Name</label></td>
 						 <td><input type="text" placeholder="enter user name" required class="form-control"><td>
 					  </tr>
 					  <tr>
