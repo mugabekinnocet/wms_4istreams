@@ -7,9 +7,9 @@
 	<dl>
 
 	<?php
-	// Connect to database server
-	mysql_connect("mysql.myhost.com", "user", "sesame") or die (mysql_error ());
 
+	// Connect to database server
+	 include "opendbo.php";	
 	// Select database
 	mysql_select_db("mydatabase") or die(mysql_error());
 
