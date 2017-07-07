@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -54,3 +55,22 @@
 		</form>
 	</body>
 </html>	
+=======
+<html>
+	<head>
+	 <title>register</title>
+	 <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<style>
+		 .heading{
+			align:center;
+			font-family:papyrus;
+			font-size:50px;
+		 }
+		
+		</style>
+	</head>
+	<body>
+	  <h1 class = "heading">REGISTER HERE:</h1>
+	</body>
+</html>
+>>>>>>> 1e01e2361b734e1fdf4f0c8bc00c8affa4c9251e

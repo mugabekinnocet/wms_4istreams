@@ -4,7 +4,7 @@ error_reporting(0);
 $host = "localhost";
 $user = "root";
 $password = "";
-$dbname = "balya";
+$dbname = "wms";
 
 //create connection
 $conn = mysqli_connect($host, $user, $password, $dbname);
