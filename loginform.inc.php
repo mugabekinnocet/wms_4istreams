@@ -40,7 +40,7 @@ div. -->
 
 		    <div><fieldset class="fieldset" >
 			 <legend style = "align:center;">Login here</legend>
-				<div><form method="POST" action = "Products_received.html">
+				<div><form method="POST" action = "">
 					<div><table style="margin:auto;" class="table table ">
 					  <tr>
 						 <td><label>Name</label></td>
@@ -50,9 +50,20 @@ div. -->
 						 <td><label>Password</label></td>
 						 <td><input type="password" required class="form-control"><td>
 					  </tr>&nbsp;
+					
+    
 					  <tr>
-						 <td></td><td><input type = "submit" class = "btn btn-primary "></td><td><a href = "register.php">create account</a></td>
+					  
+       
+          
+       
+    </div>
+						 <td></td><td><input type = "submit" class = "btn btn-primary ">
+					<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+					<input type="Reset" value="Reset" name="Reset"></td>
+						 <td><a href = "register.php">create account</a></td>
 					  </tr>
+					  
 					 <table></div>
 				</form></div>
 	        </fieldset></div>

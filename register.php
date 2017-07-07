@@ -9,7 +9,7 @@
 					
 		
 		
-		<form action="submit_account.php" method="post" class = "form-control">
+		<form action="submitregister.php" method="post" class = "form-control">
 			<table>
 				<tr>
 					<td><label>User name</label></td>
