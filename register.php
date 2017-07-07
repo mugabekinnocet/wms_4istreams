@@ -39,6 +39,11 @@
 	
 				<br>
 		</tr>
+		<tr>
+			<td>Account type
+				<td><input type="text"  id="type" name="type" placeholder="eg.administrator">
+			</td>
+		</tr>
 
 					<tr>
 					<td><input type="submit" id="button" name="submit" value="Submit"></td>
