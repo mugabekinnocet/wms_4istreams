@@ -1,10 +1,10 @@
 <html>
 
-	<h1> <h1>
+
 
 	<style>
 #header {
-    background-color:yellow;
+    background-color:black;
     color:green;
     text-align:center;
     padding:5px;
@@ -12,8 +12,8 @@
 #nav {
     line-height:30px;
     background-color:#eeeeee;
-    height:300px;
-    width:100px;
+    height:50px;
+    width:50px;
     float:left;
     padding:5px; 
 }
@@ -35,14 +35,14 @@
 	 
 
 <div id="header">
+
 <h1>WELCOME TO iSTREAMS WORHSHOP PAGE</h1>
-<h2>Administration Hub</h2>
+<center><img src="istrm.png" width="100" height="50"></center>
+<h2><marquee>We care with service</marquee></h2>
 </div>
 
 <div id="nav">
-<br>
-<br>
-<br>
+
 </div>
 
 <div id="section">
@@ -75,6 +75,13 @@
 <h1>Contact Us </h1>
 <p>
 <UL>
+</div>
+<div id="footer">
+Copyright @ mkinnocent
+</div>
+
+</body>
+</html>
 
 
 

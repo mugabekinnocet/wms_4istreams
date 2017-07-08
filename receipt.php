@@ -11,8 +11,8 @@
 	<form>
 		<table>
 			<div class ="header">
-							<center><img src="BARYA.PNG" width="80" height="70">
-							<h1 id="heading1">iStreams</h1></center>
+							<center><img src="istrm.png" width="100" height="50">
+							
 			</div>
 			<div>
 				<div>Customer's Name</div>
