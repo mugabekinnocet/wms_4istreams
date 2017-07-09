@@ -1,4 +1,12 @@
 <html>
+<style>
+#page {
+    background-color:black;
+    color:green;
+    text-align:center;
+    padding:5px;
+}
+</style>
 <head>
     <title>istreams receipt</title>
 </head>
@@ -14,6 +22,11 @@
      </script>
    </head>
         <body > 
+		<div id="page">
+		<?php 
+		echo "Print Receipt";
+		?>
+		</div>
                             <div id="divToPrint" >
 							<fieldset>
 							<legend>Customer's Receipt</legend>

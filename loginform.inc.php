@@ -53,12 +53,7 @@ div. -->
 					
     
 					  <tr>
-					  
-       
-          
-       
-    </div>
-						 <td></td><td><input type = "submit" class = "btn btn-primary ">
+					  <td></td><td><input type = "submit" class = "btn btn-primary ">
 					<input type="checkbox"><label for="checkbox">Keep me logged in</label>
 					<input type="Reset" value="Reset" name="Reset"></td>
 						 <td><a href = "register.php">create account</a></td>

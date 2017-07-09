@@ -40,8 +40,8 @@
 					<br>
 			</tr>
 			<tr>
-				<td>Account type
-					<td><input type="text"  id="type" name="type" placeholder="eg.administrator">
+				<td>user type
+					<td><input type="text"  id="type" name="usertype" placeholder="eg.administrator">
 				</td>
 			</tr>
 
