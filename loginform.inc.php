@@ -57,6 +57,12 @@ div. -->
 					<input type="checkbox"><label for="checkbox">Keep me logged in</label>
 					<input type="Reset" value="Reset" name="Reset"></td>
 						 <td><a href = "register.php">create account</a></td>
+						 <td><a href = "administrator.php">admin</a></td>
+						 <td><a href = "finance.php">finance</a></td>
+						 <td><a href = "receipt.php">receipt</a></td>
+						 <td><a href = "retrieve.php">retrieve</a></td>
+						 <td><a href = "submitregister.php">submit</a></td>
+						 <td><a href = "technician.php">technician</a></td>
 					  </tr>
 					  
 					 <table></div>
