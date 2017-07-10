@@ -21,6 +21,13 @@
     float:left;
     padding:10px; 
 }
+#footer1 {
+    background-color:white;
+    color:green;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
 #footer {
     background-color:black;
     color:green;
@@ -74,15 +81,17 @@
 <UL>
 <li><a href="index.html"><b>Payments</B> </a></li>
 <li><a href="index.html"><b>Receipts</B> </a></li>
-
+</div>
+<div id="footer1">
 <a href="logout.php">Logout</a>
+</div>
 
 </ul>
 </p>
 </div>
-
+<div id="footer">
 Copyright @ TYNAH
 </div>
-<a href="logout.php">Logout</a>
+
 </body>
 </html>

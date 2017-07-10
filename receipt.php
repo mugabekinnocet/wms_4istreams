@@ -56,6 +56,7 @@
             </div>
 			</fieldset>
             <div>
+			<a href="finance.php">go back</a>
                 <input type="button" value="print" onclick="PrintDiv();" />
             </div>
 		</table>
