@@ -54,11 +54,21 @@ $comments = mysqli_query($conn, $query);
 
 			// Write the data of the person
 			echo"<div style='margin:30px 0px;'>
-			<dt>ServiceId:</dt><dd>$ServiceId</dd>
-			<dt>Name:</dt><dd>$FirstName $LastName</dd>
-			<dt>Items:</dt><dd>$Items</dd>
-			<dt>Agreedamount:</dt><dd>$Agreedamount</dd>
-			<dt>Phone:</dt><dd>$Phone</dd>
+			<dt>ServiceId:</dt><dd>";
+			echo $row['ServiceId'];
+			echo "</dd>
+			<dt>Name:</dt><dd>";
+			echo $row['FirstName'] . " " . $row['LastName'];
+			echo "</dd>
+			<dt>Items:</dt><dd>";
+			echo $row['Items'];
+			echo "</dd>
+			<dt>Agreedamount:</dt><dd>";
+			echo $row['Agreedamount'];
+			echo "</dd>
+			<dt>Phone:</dt><dd>";
+			echo $row['Phone'];
+			echo "</dd>
 			 </div>";
 			
 		}
