@@ -101,7 +101,7 @@ ul li a{ box-shadow: 0px 1px 1px #999; }
 	<div id="page">
 		<div id="logo">
 			<h1><a href="/" id="logoLink">WORKSHOP PAGE</a></h1>
-			<marquee direction="down"><center><img src="istrm.png" width="100" height="50"></center></marquee>
+			<center><img src="istrm.png" width="100" height="50"></center>
 			<h2><marquee behavior="roll">WE CARE FOR YOUR MACHINE</marquee><h2>
 		</div>
 		<div id="nav">
