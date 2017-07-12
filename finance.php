@@ -31,12 +31,33 @@
 		echo "WELCOME TO THE FINANCE MANAGER'S PAGE";
 	?><h1></center><br>
 	</div>
-	<form action="retrieve.php" method="get">
+	<form action="finance.php" method="get">
 		<table>
 			<tr>
 				<td>Customer's Names
-				<td><input type="text" name="name" placeholder="please enter customers names" 	required></td>
+				<td><input type="text" name="id" placeholder="please enter customers names" 	required></td>
 				<td><input type="submit" value="search"></td>
+				<?php
+					include "opendbo.php";
+					$query = "SELECT * FROM user WHERE id=" . $_GET["id"];
+					$comments = mysqli_query($conn, $query);
+					echo "<table>";
+					while($row = mysqli_fetch_array($comments, MYSQLI_ASSOC)){
+						echo"<tr><td>";
+						echo $row['ServiceId'];
+						echo "</td><td>";
+						echo $row['FirstName'] . " " . $row['LastName'];
+						echo "</td><td>";
+						echo $row['Items'];
+						echo "</td><td>";
+						echo $row['Agreedamount'];
+						echo "</td><td>";
+						echo $row['Phone'];
+						echo "</td></tr>";
+						echo "</table>";
+					}
+				
+				?>
 			</tr>
 		</table>
 		
