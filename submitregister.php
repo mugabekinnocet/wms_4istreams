@@ -1,15 +1,15 @@
 <?php
 $username=$_POST['username'];
 $email=$_POST['email'];
-$Password=$_POST['Password'];
-$type=$_POST["type"];
+$password=$_POST['password'];
+$usertype=$_POST["usertype"];
 
 
 //insert the information
 require("opendbo.php");
 
-$query="insert into user(username,email,type,Password)
- values('$username', '$email','$type','$Password')";
+$query="insert into users(username,email,usertype,password)
+ values('$username', '$email','$usertype','$password')";
 
 //execute query
 $execute=mysql_query($query);

@@ -1,10 +1,13 @@
 <!doctype html>
 <html>
 	<head>
-	 <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/structure.css">
 	</head>
 	<body>
+	<form class="box register">
+	<fieldset class="boxBody">
 		<h2>Registration Page</h2>
 					
 		
@@ -34,19 +37,20 @@
 					<label>Create a password:</label>
 				</td>
 			  <td>
-			  <input type="Password" id="Password" name="Password" placeholder="Create a Password" required="required" >
+			  <input type="Password" id="Password" name="password" placeholder="Create a Password" required="required" >
 			  </td>
 		
 					<br>
 			</tr>
 			<tr>
-				<td>user type
+				<td>User type
 					<td><input type="text"  id="type" name="usertype" placeholder="eg.administrator">
 				</td>
 			</tr>
-
+				</fieldset>
+				</table>
 						<tr>
-						<td><input type="submit" id="button" name="submit" value="Submit"></td>
+						<td><input type="submit" id="button" name="submit" value="sign up" tabindex="4"></td>
 			</tr>
 			
 						
@@ -55,7 +59,7 @@
 							
 						
 			
-			</table>
+			
 			</form>
 		</body>
 </html>	

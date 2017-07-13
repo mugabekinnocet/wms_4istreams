@@ -28,7 +28,7 @@
 	<div id="header">
 	<center><h1>
 	<?php
-		echo "WELCOME TO THE FINANCE MANAGER'S OFFICE";
+		echo "WELCOME TO THE FINANCE MANAGER'S PAGE";
 	?><h1></center><br>
 	</div>
 	<form action="finance.php" method="get">
