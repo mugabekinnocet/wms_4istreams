@@ -4,7 +4,7 @@
 <style>
 #header {
     background-color:black;
-    color:green;
+    color:white;
     text-align:center;
     padding:5px;
 }
@@ -40,7 +40,7 @@
 
 <div id="header">
 <h1>iStreams workshop</h1>
-<h2>Administration Hub</h2>
+<h2>ADMINISTRATION HUB</h2>
 </div>
 
 <div id="nav">

@@ -31,7 +31,7 @@ body{
 }
 .box.login
 {
-	height:260px;
+	height:360px;
     width:332px;
 	position:absolute;
 	left:50%;
@@ -43,7 +43,7 @@ body{
     background:#fefefe;
     border-top:1px solid #dde0e8;
     border-bottom:1px solid #dde0e8;
-    padding:10px 20px;
+    padding:50px 50px;
 }
 
 .box footer
@@ -52,7 +52,7 @@ body{
     border-top:1px solid #fff;
     padding:22px 26px;
     overflow:hidden;
-	height:32px;
+	height:50px;
 }
 .box label
 {
@@ -152,6 +152,14 @@ body{
 .btnLogin:active
 {
     text-shadow:rgba(0,0,0,0.3) 0 -1px 0px; 
+}
+footer#back{
+	position:fixed;
+	left:0;
+
+	text-align:center;
+	font:normal 11px/16px Arial, Helvetica, sans-serif;
+	width:100%;
 }
 footer#main{
 	position:fixed;

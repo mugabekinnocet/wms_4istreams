@@ -1,24 +1,17 @@
 <?php  //Start the Session
 session_start();
 require('opendbo.php');
-if (isset($_POST['username']) and isset($_POST['password'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $query = "SELECT * FROM `user` WHERE username='$username' and password='$password'";
-    $result = mysql_query($query) or die(mysql_error());
-    $count = mysql_num_rows($result);
-
-    if ($count == 1){
-        $_SESSION['username'] = $username;
-    }
-
-    else{
-        echo "Invalid Login Credentials.";
-    }
+function Login(form) {
+username = new Array("u1","u2","u3",);
+password = new Array("p1","p2","p3",);
+page =  new Array ("finance.php/administrator.php/technician.php";)
+if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] || form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] || form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] || form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] || form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) {
+self.location.href = page;
 }
-if (isset($_SESSION['username'])){
-    $username = $_SESSION['username'];
-    echo "Hello " . $username;
-    echo "This is the Members Area";
-
+else {
+alert("Either the username or password you entered is incorrect.\nPlease try again.");
+form.username.focus();
+}
+return true;
+}
 ?>

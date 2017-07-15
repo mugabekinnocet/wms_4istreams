@@ -6,14 +6,10 @@
 <link rel="stylesheet" type="text/css" href="css/structure.css">
 	</head>
 	<body>
-	<form class="box register">
-	<fieldset class="boxBody">
-		<h2>Registration Page</h2>
-					
-		
-		
-		<form action="submitregister.php" method="post" class = "form-control">
-			<table>
+	<p>Registration Page</p>
+	<form class="box register" action="submitregister.php" method="post" class = "form-control">
+	
+		<table>
 				<tr>
 					<td><label>User name</label></td>
 				<td><input type="text" id="name" name="username" placeholder="Choose a User name" required="required" >
@@ -34,8 +30,7 @@
 					
 			<tr>
 				<td>
-					<label>Create a password:</label>
-				</td>
+					<label>Create password:</label>
 			  <td>
 			  <input type="Password" id="Password" name="password" placeholder="Create a Password" required="required" >
 			  </td>
@@ -46,20 +41,12 @@
 				<td>User type
 					<td><input type="text"  id="type" name="usertype" placeholder="eg.administrator">
 				</td>
-			</tr>
-				</fieldset>
-				</table>
-						<tr>
-						<td><input type="submit" id="button" name="submit" value="sign up" tabindex="4"></td>
+				<tr>
+						<td size="50px"> <Center><input type="submit" id="button" name="submit" value="sign up" tabindex="4">
+						<td><a href="index.php">go back</a></td>
 			</tr>
 			
 						
-							
-
-							
-						
-			
-			
 			</form>
 		</body>
 </html>	

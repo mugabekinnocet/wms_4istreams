@@ -1,20 +1,11 @@
 <?php
-error_reporting(0);
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "wms";
-
-//create connection
-$conn = mysqli_connect($host, $user, $password, $dbname);
-
-if(!$conn){
-	die("Connection failed: ".mysqli_connect_error());
-}
-	
-else{
-	echo"connection succesful";
-   }
-
+ $username="root";
+ $password="";
+ $database="wms";
+ $servername="localhost";
+ 
+mysql_connect($servername,$username,$password) or die ('nope '.mysql_error()) ;
+ mysql_select_db($database) or die ('nope for db '.mysql_error()) ;
+ 
 ?>
