@@ -53,10 +53,11 @@
 <h1>Technician</h1>
 <p>
 <UL>
-<li><a href="index.html"><b>registered items</B> </a></li>
-<li><a href="index.html"><b>progress report</B> </a></li>
-<li><a href="index.html"><b>deadline reports</B> </a></li>
-<li><a href="index.html"><b>payments</B> </a></li>
+<li><a href="retrieve.php"><b>registered items</B> </a></li>
+<li><a href="retrieve.php"><b>progress report</B> </a></li>
+<li><a href="retrieve.php"><b>deadline reports</B> </a></li>
+
+
 
 </ul>
 </p>

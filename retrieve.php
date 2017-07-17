@@ -19,10 +19,11 @@
 			  die('invalid id');
 			else*/
 			//$query = "SELECT * FROM `user` WHERE `id` =$id LIMIT 0 , 30";
-			//$query = "SELECT * FROM user";
-			$query = "SELECT * FROM user WHERE id=" . $_GET["id"];
+			$query = "SELECT * FROM user";
+			//$query = "SELECT * FROM user WHERE id=" . $_GET["id"];
 			$comments = mysqli_query($conn, $query);
-            echo "<table>";
+            echo "<table border = '1'>";
+			echo "<th><td>Service Id</td><td>Name</td><td>Items</td><td>Agreed Ammount</td><td>Telephone Number</td></th>";
 				// Get data from the database depending on the value of the id in the URL
 				//$strSQL = "SELECT * FROM user WHERE id=" . $_GET["id"];
 				//$rs = mysql_query($strSQL);
