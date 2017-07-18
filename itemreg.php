@@ -52,7 +52,7 @@
 				</div>
 
 				<div id="section">
-				  <form class="wpcf7-form" action="/istreams/contact-us-2/#wpcf7-f63-p64-o1" method="post" novalidate="novalidate">
+				  <form class="wpcf7-form" method="POST">
 <div style="display: none;">
 <input name="_wpcf7" type="hidden" value="63">
 <input name="_wpcf7_version" type="hidden" value="4.8">
@@ -63,28 +63,49 @@
 </div>
 <p><label> FirstName (required)<br>
     <span class="wpcf7-form-control-wrap FirstName"><input name="FirstName" 
-	 type="text" size="40" value=""></span> </label></p>
+	 type="text" size="40" value="" required></span> </label></p>
 <p><label> LastName (required)<br>
     <span class="wpcf7-form-control-wrap LastName"><input name="LastName" 
-	 type="text" size="40" value=""></span> </label></p>
+	 type="text" size="40" value="" required></span> </label></p>
 	 <p><label> ServiceId (required)<br>
     <span class="wpcf7-form-control-wrap ServiceId"><input name="ServiceId" 
-	 type="text" size="40" value=""></span> </label></p>
+	 type="text" size="40" value="" required></span> </label></p>
 	 <p><label> Items (required)<br>
     <span class="wpcf7-form-control-wrap Items"><input name="Items" 
-	 type="text" size="40" value=""></span> </label></p>
-	 <p><label> Agreed amount (required)<br>
-    <span class="wpcf7-form-control-wrap Agreed amount"><input name="Agreed amount" 
-	 type="text" size="40" value=""></span> </label></p>
+	 type="text" size="40" value="" required></span> </label></p>
+	 <p><label> Agreed ammount (required)<br>
+    <span class="wpcf7-form-control-wrap Agreedamount"><input name="Agreedamount" 
+	 type="text" size="40" value="" required></span> </label></p>
 	 <p><label> Phone (required)<br>
     <span class="wpcf7-form-control-wrap Phone"><input name="Phone" 
-	 type="text" size="40" value=""></span> </label></p>
+	 type="text" size="40" value="" required></span> </label></p>
 	
-	<p><input 
-
-
-class="wpcf7-form-control wpcf7-submit" type="submit" value="Send"><span class="ajax-loader"></span></p>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+	<p><input class="wpcf7-form-control wpcf7-submit" name = "Send" type="submit" value="Send"><span class="ajax-loader"></span></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div>
+<?php
+require 'core.inc.php';
+require 'opendbo.php';
+if (isset($_POST['Send'])){
+	$fname=$_POST['FirstName'];
+	$lname=$_POST['LastName'];
+	$serviceid=$_POST['ServiceId'];
+	$items=$_POST['Items'];
+	$ammount=$_POST['Agreedamount'];
+	$phone=$_POST['Phone'];
+	$insert_query = "INSERT INTO user (ServiceId, FirstName, LastName, Items, Agreedamount, Phone) VALUES ('$serviceid', '$fname', '$lname', '$items', '$ammount', '$phone')";
+										
+										$insert_query_run = mysqli_query($conn,$insert_query);
+										if($insert_query_run){
+											
+											echo "\t successfully registered \t";
+										}else{
+											echo "\t failed try again \t";
+										}
+											
+										
+									}
+?>
+</form></div>
 				</div>
 
 				<div id="section">
