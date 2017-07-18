@@ -8,8 +8,10 @@ $usertype=$_POST["usertype"];
 //insert the information
 require("opendbo.php");
 
-$query="insert into users(username,email,usertype,password)
- values('$username', '$email','$usertype','$password')";
+$query="insert into users(username,email,password,usertype)
+ values('$username', '$email','$password','$usertype')";
+
+
 
 //execute query
 $execute=mysql_query($query);

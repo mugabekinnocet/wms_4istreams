@@ -64,6 +64,12 @@
             padding: 20px;
             clear: both;
         }
+        #footer2{
+            margin: 1Opx 0;
+            background: black;
+            padding: 10px;
+            clear: both;
+        }
         #footer1{
             margin: 30px 0;
             background: blue;
@@ -131,3 +137,46 @@
                         </div>
                         </body>
                         </html>
+
+                        <div id="page">
+                            <div id="logo">
+                                <h1><a href="/" id="logoLink">WORKSHOP PAGE</a></h1>
+                                <center><img src="istrm.png" width="100" height="50"></center>
+                                <h2><marquee behavior="roll">WE CARE FOR YOUR MACHINE</marquee><h2>
+                                        </div>
+                                        <div id="nav">
+                                            <ul>
+                                                <li><a href="login.php.html">Login</a></li>
+                                                <li><a href="register.php">Sign Up</a></li>
+                                                <li><a href="customer.php">View Progress</a></li>
+                                            </ul>	
+                                        </div>
+                                        <div id="content">
+                                            <h2>SERVICES</h2>
+                                            <p>
+                                            <li>Computer Repair and Maintenance
+                                                </p>
+                                                <p><li>OS installations </p>
+                                            <li>Software upgrading and installations<br>
+
+                                                <div id="footer2">
+                                                    <h3><marquee behaviour="slide" rate="5times/sec" >ALL THESE ON AN AFFORDABLE PRICE</marquee></h3>
+
+                                                </div>
+                                        </DIV>
+                                        <div id="footer1">
+                                            <h2>FOLLOW_US</h2>
+                                            <br>
+                                            <a href="http://www.facebook.com/login/"><img src="facebook.png" width="50" height="50">FACEBOOK</a>
+                                            <a href="http://www.istreams@twitter"><img src="whatsApp.png" width="50" height="50">WHATSAPP</a>
+                                            <a href="http://www.istreams:istreams@viber"><img src="viber.png" width="50" height="50">TWITTER</a><br>
+
+                                        </div>
+                                        <div id="footer">
+                                            <p>
+                                                by mkinnocent
+                                            </p>
+                                        </div>
+                                        </div>
+                                        </body>
+                                        </html>
