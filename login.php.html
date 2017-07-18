@@ -10,12 +10,14 @@
 </head>
 
 <body>
-<form class="box login">
+<form class="box login" action="logindata.php" method="POST">
 	<fieldset class="boxBody">
+	<label>Usertype</label>
+	  <input type="text" name="usertype" tabindex="1" placeholder="eg administrator" required>
 	  <label>Username</label>
-	  <input type="text" tabindex="1" placeholder="eg mkinnocent" required>
+	  <input type="text" name="user_name" tabindex="1" placeholder="eg mkinnocent" required>
 	  <label><a href="register.php" class="rLink" tabindex="5">Forget your password?</a>Password</label>
-	  <input type="password" tabindex="2" required>
+	  <input type="password" name="pass_word" tabindex="2" required>
 	  <a href="logout.php">click here to go back</a>
 	</fieldset>
 	<footer>
@@ -23,6 +25,7 @@
 	  <input type="submit" class="btnLogin" value="Login" tabindex="4">
 	 
 	</footer>
+	<div id="message"></div>
 </form>
 <footer id="main">
 

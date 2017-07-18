@@ -1,9 +1,22 @@
-<!doctype html>
+
+<?php
+  session_start();
+
+  if (isset($_SESSION['username'])) {
+      session_start();
+      session_destroy();
+  }
+
+
+?>
+<!DOCTYPE html
 <html>
 	<head>
 	
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/structure.css">
+<!-- Bootstrap -->
+    
 	</head>
 	<body>
 	<p>Registration Page</p>
@@ -12,7 +25,7 @@
 		<table>
 				<tr>
 					<td><label>User name</label></td>
-				<td><input type="text" id="name" name="username" placeholder="Choose a User name" required="required" >
+				<td><input type="text" id="name" name="user_name" placeholder="Choose a User name" required="required" >
 				</td>
 					
 			</tr><br>
@@ -32,7 +45,7 @@
 				<td>
 					<label>Create password:</label>
 			  <td>
-			  <input type="Password" id="Password" name="password" placeholder="Create a Password" required="required" >
+			  <input type="Password" id="Password" name="pass_word" placeholder="Create a Password" required="required" >
 			  </td>
 		
 					<br>

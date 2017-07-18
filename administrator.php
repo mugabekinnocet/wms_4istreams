@@ -1,4 +1,10 @@
-
+<?php
+//PUT THIS HEADER ON TOP OF EACH UNIQUE PAGE
+session_start();
+if (!isset($_SESSION['username'])) {
+   
+}
+?>
 <html>
 
 <style>
@@ -91,7 +97,7 @@
 </p>
 </div>
 <div id="footer">
-Copyright @ TYNAH
+Copyright @ atm
 </div>
 
 </body>

@@ -1,20 +1,20 @@
 <?php
-$username=$_POST['username'];
+$user_name=$_POST['user_name'];
 $email=$_POST['email'];
-$password=$_POST['password'];
+$pass_word=$_POST['pass_word'];
 $usertype=$_POST["usertype"];
 
 
 //insert the information
 require("opendbo.php");
 
-$query="insert into users(username,email,password,usertype)
- values('$username', '$email','$password','$usertype')";
+$query="insert into users(user_name,email,pass_word,usertype)
+ values('$user_name', '$email','$pass_word','$usertype')";
 
 
 
 //execute query
-$execute=mysql_query($query);
+$execute=mysqli_query($query);
 
 
 if($execute)
@@ -26,7 +26,7 @@ Print '<script>="refresh" content="window.location.assign("index.php");</script>
 	
 }
 	else{
-		echo "There is a problem".mysql_error();
+		echo "There is a problem".mysqli_error();
 	Print '<script>window.location.assign("register.php");</script>'; 
     }
 	

@@ -62,39 +62,40 @@
 <input name="_wpcf7_nonce" type="hidden" value="cbdb12b346">
 </div>
 <p><label> FirstName (required)<br>
-    <span class="wpcf7-form-control-wrap FirstName"><input name="FirstName" 
+    <span class="wpcf7-form-control-wrap FirstName"><input name="firstname" 
 	 type="text" size="40" value="" required></span> </label></p>
 <p><label> LastName (required)<br>
-    <span class="wpcf7-form-control-wrap LastName"><input name="LastName" 
+    <span class="wpcf7-form-control-wrap LastName"><input name="lastname" 
 	 type="text" size="40" value="" required></span> </label></p>
-	 <p><label> ServiceId (required)<br>
-    <span class="wpcf7-form-control-wrap ServiceId"><input name="ServiceId" 
-	 type="text" size="40" value="" required></span> </label></p>
+	 
 	 <p><label> Items (required)<br>
-    <span class="wpcf7-form-control-wrap Items"><input name="Items" 
+    <span class="wpcf7-form-control-wrap Items"><input name="items" 
 	 type="text" size="40" value="" required></span> </label></p>
 	 <p><label> Agreed ammount (required)<br>
-    <span class="wpcf7-form-control-wrap Agreedamount"><input name="Agreedamount" 
+    <span class="wpcf7-form-control-wrap Agreedamount"><input name="agreedamount" 
+	 type="text" size="40" value="" required></span> </label></p>
+	 <p><label> Paid (required)<br>
+    <span class="wpcf7-form-control-wrap Agreedamount"><input name="paid" 
 	 type="text" size="40" value="" required></span> </label></p>
 	 <p><label> Phone (required)<br>
-    <span class="wpcf7-form-control-wrap Phone"><input name="Phone" 
+    <span class="wpcf7-form-control-wrap Phone"><input name="phone" 
 	 type="text" size="40" value="" required></span> </label></p>
 	
 	<p><input class="wpcf7-form-control wpcf7-submit" name = "Send" type="submit" value="Send"><span class="ajax-loader"></span></p>
 <div class="wpcf7-response-output wpcf7-display-none"></div>
 <?php
-require 'core.inc.php';
+
 require 'opendbo.php';
 if (isset($_POST['Send'])){
-	$fname=$_POST['FirstName'];
-	$lname=$_POST['LastName'];
-	$serviceid=$_POST['ServiceId'];
-	$items=$_POST['Items'];
-	$ammount=$_POST['Agreedamount'];
-	$phone=$_POST['Phone'];
-	$insert_query = "INSERT INTO user (ServiceId, FirstName, LastName, Items, Agreedamount, Phone) VALUES ('$serviceid', '$fname', '$lname', '$items', '$ammount', '$phone')";
+	$firstname=$_POST['firstname'];
+	$lastname=$_POST['lastname'];
+	$items=$_POST['items'];
+	$agreedamount=$_POST['agreedamount'];
+	$paid=$_POST['paid'];
+	$phone=$_POST['phone'];
+	$insert_query = "INSERT INTO user (firstname, lastname, items, agreedamount,paid, phone) VALUES ('$firstname', '$lastname', '$items', '$agreedamount','$paid', '$phone')";
 										
-										$insert_query_run = mysqli_query($conn,$insert_query);
+										$insert_query_run = mysql_query($insert_query);
 										if($insert_query_run){
 											
 											echo "\t successfully registered \t";

@@ -104,39 +104,7 @@
 
         <!-- webpage content goes here in the body -->
 
-        <div id="page">
-            <div id="logo">
-                <h1><a href="/" id="logoLink">WORKSHOP PAGE</a></h1>
-                <center><img src="istrm.png" width="100" height="50"></center>
-                <h2><marquee behavior="roll">WE CARE FOR YOUR MACHINE</marquee><h2>
-                        </div>
-                        <div id="nav">
-                            <ul>
-                                <li><a href="loginform.inc.php">Login</a></li>
-                                <li><a href="register.php">Sign Up</a></li>
-                                <li><a href="">View Progress</a></li>
-                            </ul>	
-                        </div>
-                        <div id="content">
-                            <h2>Services</h2>
-                            <p>
-                                Computer Repair and Maintenance
-                            </p>
-                            <p> </p>
-
-                        </div>
-                        <div id="footer1">
-                            <h2>Contact Us</h2>
-
-                        </div>
-                        <div id="footer">
-                            <p>
-                                by mkinnocent
-                            </p>
-                        </div>
-                        </div>
-                        </body>
-                        </html>
+      
 
                         <div id="page">
                             <div id="logo">
@@ -174,7 +142,7 @@
                                         </div>
                                         <div id="footer">
                                             <p>
-                                                by mkinnocent
+                                                by atm
                                             </p>
                                         </div>
                                         </div>

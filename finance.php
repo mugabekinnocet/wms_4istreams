@@ -1,3 +1,10 @@
+<?php
+//PUT THIS HEADER ON TOP OF EACH UNIQUE PAGE
+session_start();
+if (!isset($_SESSION['username'])) {
+
+}
+?>
 <doctype html>
 <html>
 	<head>
@@ -35,29 +42,70 @@
 		<table>
 			<tr>
 				<td>Customer's Names
-				<td><input type="text" name="id" placeholder="please enter customers names" 	required></td>
+				<td><input type="text" name="serviceId" placeholder="please enter customers names" 	required></td>
 				<td><input type="submit" value="search"></td>
 				<?php
-					include "opendbo.php";
-					$query = "SELECT * FROM user WHERE id=" . $_GET["id"];
-					$comments = mysqli_query($conn, $query);
-					echo "<table>";
-					while($row = mysqli_fetch_array($comments, MYSQLI_ASSOC)){
-						echo"<tr><td>";
-						echo $row['ServiceId'];
-						echo "</td><td>";
-						echo $row['FirstName'] . " " . $row['LastName'];
-						echo "</td><td>";
-						echo $row['Items'];
-						echo "</td><td>";
-						echo $row['Agreedamount'];
-						echo "</td><td>";
-						echo $row['Phone'];
-						echo "</td></tr>";
-						echo "</table>";
-					}
-				
-				?>
+require("opendbo.php");
+
+$result = mysql_query("SELECT * FROM user");
+
+echo "<table style='border-style:groove; border-width:5px; color:#960; border-collapse:collapse; width:65%;margin-left:5.5%;background-color: white;'>
+<tr style='background-color: green; color:black;'>
+<th style='border-style:groove; border-width:2px;'>SERVICEID</th>
+<th style='border-style:groove; border-width:2px;'FIRST NAME</th>
+<th style='border-style:groove; border-width:2px;'LAST NAME</th>
+<th style='border-style:groove; border-width:2px;'>ITEMS</th>
+<th style='border-style:groove; border-width:2px;'>SERVICE-DATE</th>
+<th style='border-style:groove; border-width:2px;'>AGREED-AMOUNT</th>
+<th style='border-style:groove; border-width:2px;'>PAID</th>
+<th style='border-style:groove; border-width:2px;'>PHONE NUMBER</th>
+<th style='border-style:groove; border-width:2px;'>UPDATE PAID</th>
+<th style='border-style:groove; border-width:2px;'>EDIT</th>
+<th style='border-style:groove; border-width:2px;'>DELETE</th>
+
+</tr>";
+
+while($row = mysql_fetch_array($result))
+  {
+echo "
+  <tr>
+  <td  style='border-style:groove; border-width:2px;' >" . $row['serviceId'] . "</td>
+   <td style='border-style:groove; border-width:2px;'>" . $row['firstname'] . "</td>
+   <td style='border-style:groove; border-width:2px;'>" . $row['lastname'] . "</td>
+   <td style='border-style:groove; border-width:2px;'>" . $row['items'] . "</td>
+   <td style='border-style:groove; border-width:2px;'>" . $row['servicedate'] . "</td>
+   <td style='border-style:groove; border-width:2px;'>" . $row['agreedamount'] . "</td>
+   <td style='border-style:groove; border-width:2px;'>" . $row['paid'] . "</td>
+    <td style='border-style:groove; border-width:2px;'>" . $row['phone'] . "</td>
+   
+   
+  <td style='border-style:groove; border-width:2px;'>
+   <input type='hidden' name='id' value='".$row['serviceId']."'> 
+   <input type='submit' value='Update paid'>
+   </td>
+   </form>
+   <form action='editingform2.php' method='post'>
+  <td style='border-style:groove; border-width:2px;'>
+   <input type='hidden' name='id' value='".$row['serviceId']."'> 
+   <input type='submit' value='edit'>
+   </td>
+   </form>
+   <form action='deletingform2.php' method='post'>
+   <td style='border-style:groove; border-width:2px;'>
+   <input type='hidden' name='kk' value='".$row['serviceId']."'>
+   <input type='submit' value='delete' onclick='return confirm(are you sure you want to delete ?)'</td>
+   </form>
+   
+   ";
+  
+  ?>
+  <?php
+  echo "</tr>";
+  }
+echo "</table>";
+
+
+?>
 			</tr>
 		</table>
 		
@@ -69,7 +117,7 @@
 		</div>
 	<div id="footer1">
 	<p>
-			 by mkinnocent
+			 by atm
 			</p>
 		
 	</div>
