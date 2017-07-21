@@ -114,7 +114,7 @@
                                         </div>
                                         <div id="nav">
                                             <ul>
-                                                <li><a href="login.php.html">Login</a></li>
+                                                <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">Sign Up</a></li>
                                                 <li><a href="customer.php">View Progress</a></li>
                                             </ul>	
