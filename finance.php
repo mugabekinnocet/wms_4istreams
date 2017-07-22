@@ -9,6 +9,7 @@ if (!isset($_SESSION['username'])) {
 <html>
 	<head>
 		<title>
+			finance page
 		</title>
 	</head>
 	<style>
@@ -41,9 +42,7 @@ if (!isset($_SESSION['username'])) {
 	<form action="finance.php" method="get">
 		<table>
 			<tr>
-				<td>Customer's Names
-				<td><input type="text" name="serviceId" placeholder="please enter customers names" 	required></td>
-				<td><input type="submit" value="search"></td>
+				
 				<?php
 require("opendbo.php");
 
