@@ -27,16 +27,10 @@
                 </div>
 
 
-                <form action="" method="get">
+                <form action="viewprogress.php" method="POST">
                     <table>
-                        <tr>
-
-                            <td>Enter Your Name
-                            <td><input type="text" name="id" placeholder="please enter customers names" 	required></td>
-                            <td>Enter your Phone
-                            <td><input type="phone number" name="phone" placeholder="please enter if you have" ></td>
-                            <td> Enter Serviceid
-                            <td><input type="number" name="serviceid" required></td>
+                        <th> Enter Serviceid</th>
+                            <td><input type="number" name="serviceId" required></td>
                             <td><input type="submit" value="search"></td>
                     </table>
                     <a href="index.php">click here to go back</a>

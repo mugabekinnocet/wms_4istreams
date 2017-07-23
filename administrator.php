@@ -2,7 +2,7 @@
 //PUT THIS HEADER ON TOP OF EACH UNIQUE PAGE
 session_start();
 if (!isset($_SESSION['username'])) {
-   
+  
 }
 ?>
 <html>
@@ -74,8 +74,9 @@ if (!isset($_SESSION['username'])) {
 <h1>Admin</h1>
 <p>
 <UL>
-<li><a href="index.html"><b>Technicians</B> </a></li>
-<li><a href="index.html"><b>Finance managers</B> </a></li>
+<li><a href="technician.php"><b>Technicians</B> </a></li>
+<li><a href="finance.php"><b>Finance managers</B> </a></li>
+<li><a href="viewaccounts.php"><b>View Accounts</B> </a></li>
 
 
 </ul>
@@ -90,6 +91,7 @@ if (!isset($_SESSION['username'])) {
 <li><a href="index.html"><b>Receipts</B> </a></li>
 </div>
 <div id="footer1">
+<a href="administrator.php">back</a>
 <a href="logout.php">Logout</a>
 </div>
 

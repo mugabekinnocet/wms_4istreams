@@ -1,35 +1,64 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title> Login Form</title>
-<meta charset="UTF-8" />
-<meta name="mkinnocent" content="PremiumPixels.com">
-<meta name="Author" content="$hekh@r d-Ziner, CSSJUNTION.com">
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/structure.css">
-</head>
+<?php
 
-<body>
-<form class="box login" action="logindata.php" method="POST">
-	<fieldset class="boxBody">
-	<label>Usertype</label>
-	  <input type="text" name="usertype" tabindex="1" placeholder="eg administrator" required>
-	  <label>Username</label>
-	  <input type="text" name="user_name" tabindex="1" placeholder="eg mkinnocent" required>
-	  <label><a href="register.php" class="rLink" tabindex="5">Forget your password?</a>Password</label>
-	  <input type="password" name="pass_word" tabindex="2" required>
-	  <a href="logout.php">click here to go back</a>
-	</fieldset>
-	<footer>
-	  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
-	  <input type="submit" class="btnLogin" value="Login" tabindex="4">
-	 
-	</footer>
-	<div id="message"></div>
-</form>
-<footer id="main">
+?>
 
-  <a href="http://wwww.istreams.com">Simple Login Form Coded by mkinnocent</a> | <a href="http://www.premiumpixels.com">PSD by Premium Pixels</a>
-</footer>
-</body>
-</html>
+<script type="text/javascript">
+function validate()
+{
+	if(document.form1.loginid.value=="")
+	{
+		alert("Enter username");
+		document.form1.loginid.focus();
+		return false;
+	}
+	if(document.form1.password.value=="")
+	{
+		alert("Enter Password");
+		document.form1.loginid.focus();
+		return false;
+	}
+}
+</script>
+
+
+
+
+<div id="main">
+
+	<a name="TemplateInfo"></a>
+	<h1>Login page</h1>
+	<p>Please enter usertype,username and Password to login to the system.	</p>
+	<form method="post" action="logindata.php"  onsubmit="return validate()">
+		<table width="466" height="109" border="0">
+			<tr>
+				
+			</tr>
+			<tr>
+				<th scope="row">Usertype</th>
+				<td><input name="usertype" type="text" id="usertype" size="30" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Username<br /></th>
+				<td><input name="user_name" type="text" id="user_name" size="30" /></td>
+			</tr>
+			<tr>
+			<tr>
+				<th scope="row">Password<br /></th>
+				<td><input name="pass_word" type="password" id="pass_word" size="30" /></td>
+			</tr>
+				<th scope="row">&nbsp;</th>
+				<td><input name="submit" type="submit" class="button" id="submit" value="Login" /></td>
+			</tr>
+			<tr>
+				<th scope="row">&nbsp;</th>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<th scope="row">&nbsp;</th>
+				<td><strong><a href="forgotpassword.php">Forgot Password</a></strong></td>
+			</tr>
+		</table>
+	</form>
+	</html>
+
+

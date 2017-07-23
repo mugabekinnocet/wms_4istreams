@@ -17,20 +17,20 @@ if (isset($_SESSION['username'])) {
 
 </head>
 <body>
-    <p>Registration Page</p>
+    <h1 size="50px">Registration Page</h2>
     <form class="box register" action="submitregister.php" method="post" class = "form-control">
 
         <table>
             <tr>
-                <td><label>User name</label></td>
+                <th><label>User name</label></th>
                 <td><input type="text" id="name" name="user_name" placeholder="Choose a User name" required="required" >
                 </td>
 
             </tr><br>
 
             <tr>
-                <td>
-                    <label>Email address:</label>
+				<th height="37" scope="row">Email</th>
+               
                 <td>
                     <input type="text" id="email_address" name="email" placeholder="Enter your Email" required="required" >
                 </td>
@@ -40,8 +40,7 @@ if (isset($_SESSION['username'])) {
             </tr>
 
             <tr>
-                <td>
-                    <label>Create password:</label>
+                <th height="37" scope="row">Password:</th>
                 <td>
                     <input type="Password" id="Password" name="pass_word" placeholder="Create a Password" required="required" >
                 </td>
@@ -49,12 +48,12 @@ if (isset($_SESSION['username'])) {
             <br>
             </tr>
             <tr>
-                <td>User type
+                <th>User type
                 <td><input type="text"  id="type" name="usertype" placeholder="eg.administrator">
                 </td>
             <tr>
-                <td size="50px"> <Center><input type="submit" id="button" name="submit" value="sign up" tabindex="4">
-                <td><a href="index.php">go back</a></td>
+                <th><td size="50px"> <Center><input type="submit" id="button" name="submit" value="sign up" tabindex="4">
+                <td></th><a href="index.php">go back</a></td>
                 </tr>
 
 

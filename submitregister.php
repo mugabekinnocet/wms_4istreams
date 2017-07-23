@@ -15,7 +15,7 @@ $query = "insert into users(user_name,email,pass_word,usertype)
 
 
 //execute query
-$execute = mysqli_query($query);
+$execute = mysql_query($query);
 
 
 if ($execute) {
@@ -24,6 +24,6 @@ if ($execute) {
     Print '<script>="refresh" content="window.location.assign("index.php");</script>'; // redirects to login.php
 } else {
     echo "There is a problem" . mysqli_error();
-    Print '<script>window.location.assign("register.php");</script>';
+    
 }
 ?>
