@@ -6,15 +6,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
 	 <title>receipt</title>
-		<script type="text/javascript">     
-        function PrintDiv() {    
-           var divToPrint = document.getElementById('divToPrint');
-           var popupWin = window.open('', '_blank', 'width=300,height=300');
-           popupWin.document.open();
-           popupWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</html>');
-            popupWin.document.close();
-                }
-     </script>
+		
 	 <div id="divToPrint" >
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -62,7 +54,7 @@
                 <div>
                     <label for="received-from">Received From</label>
                     <input type="text" class="no-style id="received-from" input-received-from">
-                    <label for="amount">the amount of $</label>
+                    <label for="amount">the amount of </label>
                     <input type="text" class="no-style id="amount" input-amount">
                 </div>
                 <div>
@@ -72,15 +64,15 @@
                 <div class="payment">
                     <div class="money left">
                         <span class="left">
-                            <label for="balance">Current Balance:$</label>
+                            <label for="balance">Current Balance:</label>
                             <input type="text" class="no-style input-balance" id="balance">
                         </span>
                         <span class="left">
-                            <label for="payment">Payment Amount:$</label>
+                            <label for="payment">Payment Amount:</label>
                             <input type="text" class="no-style input-payment" id="payment">
                         </span>
                         <span class="clear">
-                            <label for="due">Balance Due:$ <label>
+                            <label for="due">Balance Due: <label>
                             <input type="text" class="no-style input-due" id="due">
                         </span>
                     </div>
@@ -106,6 +98,7 @@
 				Thank you for your co-operation
 			</div>
 			</div>
+			
         </form>    
 			
 			
@@ -115,9 +108,9 @@
         <script src="js/main.js"></script>
 
 
-</body>
-    <a href="finance.php">go back</a>  
+</body><br>
+	<A HREF="javascript:window.print()">Click to Print This Page</A>
+    <center><a href="finance.php">go back</a>  
    
-		 <input type="button" value="print" onclick="PrintDiv();" />	
-	 
+		
 </html>

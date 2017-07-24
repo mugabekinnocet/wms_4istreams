@@ -1,23 +1,22 @@
 <?php
 
 include("opendbo.php");
-$user_name='$_POST[user_name]';
 
-if($user_name == 'user_name')
+if(isset($_SESSION[user_name]))
 {
 	header("Location: register.php");
 }
-if($user_name == 'user_name')
+if($usertype == $row['usertype'])
 {
-	header("Location: account.php");
+	header("Location: register.php");
 }
 
-	if($user_name == 'user_name')
+	if(isset($_POST[submit]))
 		{
-			mysql_query("UPDATE users SET pass_word='$_POST[pass_word]' where user_name='$_POST[user_name]'");
+			mysql_query("UPDATE users SET password='$_POST[password]' where user_name='$_POST[user_name]'");
 			if(mysql_affected_rows() == 1)
 			{
-				$respass = "Password updated successfully...";
+				$respass_word = "Password updated successfully...";
 			}
 		}
 ?>
@@ -31,7 +30,7 @@ if($user_name == 'user_name')
 		  <form id="form1" name="form1" method="post" action="submitregister.php"  onsubmit="return validate()">
 		  <table width="521" height="208" border="0">
           <?php
-			if($user_name == 'user_name')
+			if(isset($_POST[submit]))
 		  {
 		  ?>
 		    <tr>
@@ -42,7 +41,10 @@ if($user_name == 'user_name')
 		  else
 		  {			  
 			?>
-		    
+		    <tr>
+		      <th width="155" height="39" scope="row">user_name</th>
+		      <td width="301"><input name="user_name" type="text" id="user_name" value="<?php echo $_GET[user_name] ; ?>" size="50" readonly="readonly" /></td>
+	        </tr>
 		    <tr>
 		      <th height="39" scope="row">New Password</th>
 		      <td><input name="pass_word" type="password" id="pass_word" size="50" /></td>
@@ -64,4 +66,3 @@ if($user_name == 'user_name')
 	        </tr>
 		    </table>
 </form>
-			

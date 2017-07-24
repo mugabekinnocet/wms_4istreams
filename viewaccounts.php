@@ -1,3 +1,5 @@
+<html>
+<head><title>accounts</title></head>
 <?php
 
 
@@ -5,11 +7,12 @@ include("opendbo.php");
 $result= mysql_query("select * from users");
 ?>
 		
-							
+		<fieldset>					
 		<div id="main">				
 			
 			<a name="TemplateInfo"></a>
-			<h1>Registration</h1>
+			
+			<legend><h1>Created Accounts</h1><legend>
             <?php
 if($result == 1)
 {
@@ -20,7 +23,7 @@ else
 {
 	?>
 		<form id="form1" name="form1" method="post" action="">
-		  <table width="790" border="1">
+		  <table width="790" border="3" style=color:#blue>
 		    <tr>
 		      <th width="110" scope="col">usertype</th>
 		      <th width="88" scope="col">user_name</th>
@@ -45,8 +48,8 @@ else
             	<?php
 	}
 	?>                           
-                                       
-                                            
+        </fieldset>                               
+       <center><a href="administrator.php">click here to go back </a>                                   
                                         
                                        
                                         

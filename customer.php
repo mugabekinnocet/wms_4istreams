@@ -33,6 +33,8 @@
                             <td><input type="number" name="serviceId" required></td>
                             <td><input type="submit" value="search"></td>
                     </table>
+				</form>
+				
                     <a href="index.php">click here to go back</a>
 
 

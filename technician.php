@@ -12,8 +12,8 @@ if (!isset($_SESSION['username'])) {
         </title>
         <style>
             #header {
-                background-color:black;
-                color:green;
+                background-color:blue;
+                color:yellow;
                 text-align:center;
                 padding:5px;
             }
@@ -38,8 +38,8 @@ if (!isset($_SESSION['username'])) {
                 padding:5px; 
             }
             #footer {
-                background-color:black;
-                color:green;
+                background-color:#068e06;
+                color:yellow;
                 clear:both;
                 text-align:center;
                 padding:5px; 

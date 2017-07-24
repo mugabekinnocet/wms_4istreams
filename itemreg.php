@@ -5,8 +5,8 @@
         </title>
         <style>
             #header {
-                background-color:black;
-                color:green;
+                background-color:blue;
+                color:yellow;
                 text-align:center;
                 padding:5px;
             }
@@ -31,8 +31,8 @@
                 padding:5px; 
             }
             #footer {
-                background-color:black;
-                color:green;
+                background-color:green;
+                color:yellow;
                 clear:both;
                 text-align:center;
                 padding:5px; 
@@ -58,6 +58,7 @@
                     <input name="_wpcf7_version" type="hidden" value="4.8">
                     <input name="_wpcf7_locale" type="hidden" value="en_US">
                     <input name="_wpcf7_unit_tag" type="hidden" value="wpcf7-f63-p64-o1">
+					
                     <input name="_wpcf7_container_post" type="hidden" value="64">
                     <input name="_wpcf7_nonce" type="hidden" value="cbdb12b346">
                 </div>
@@ -71,6 +72,8 @@
                 <p><label> Items (required)<br>
                         <span class="wpcf7-form-control-wrap Items"><input name="items" 
                                                                            type="text" size="40" value="" required></span> </label></p>
+				
+											
                 <p><label> Agreed ammount (required)<br>
                         <span class="wpcf7-form-control-wrap Agreedamount"><input name="agreedamount" 
                                                                                   type="text" size="40" value="" required></span> </label></p>
@@ -80,6 +83,7 @@
                 <p><label> Phone (required)<br>
                         <span class="wpcf7-form-control-wrap Phone"><input name="phone" 
                                                                            type="text" size="40" value="" required></span> </label></p>
+				 
 
                 <p><input class="wpcf7-form-control wpcf7-submit" name = "Send" type="submit" value="Send"><span class="ajax-loader"></span></p>
                 <div class="wpcf7-response-output wpcf7-display-none"></div>
@@ -89,9 +93,11 @@
                     $firstname = $_POST['firstname'];
                     $lastname = $_POST['lastname'];
                     $items = $_POST['items'];
+					
                     $agreedamount = $_POST['agreedamount'];
                     $paid = $_POST['paid'];
                     $phone = $_POST['phone'];
+					
                     $insert_query = "INSERT INTO user (firstname, lastname, items, agreedamount,paid, phone) VALUES ('$firstname', '$lastname', '$items', '$agreedamount','$paid', '$phone')";
 
                     $insert_query_run = mysql_query($insert_query);

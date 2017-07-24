@@ -49,14 +49,14 @@
         }
         #nav ul li a{
             padding: 20px;
-            background: blue;
+            background: green;
             color: white;
         }
         #nav ul li a:hover{
-            background-color: #ffb424;
+            background-color:blue;
             box-shadow: 0px 1px 1px #666;
         }
-        #nav ul li a:active{ background-color: #ff8f00; }
+        #nav ul li a:active{ background-color: blue; }
 
         #content{
             margin: 30px 0;
@@ -66,7 +66,7 @@
         }
         #footer2{
             margin: 1Opx 0;
-            background: black;
+            background:green;
             padding: 10px;
             clear: both;
         }

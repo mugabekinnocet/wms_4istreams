@@ -15,16 +15,17 @@ if (!isset($_SESSION['user_name'])) {
 	</head>
 	<style>
 #header {
-    background-color:black;
-    color:green;
+    background-color:blue;
+    color:yellow;
     text-align:center;
     padding:5px;
 }
 #footer{
 	margin: 30px 0;
-	background: grey;
+	background:yellow;
 	padding: 20px;
 	clear: both;
+	color:green;
 }
 #footer1 p{
 		text-align: center;
@@ -57,7 +58,7 @@ if (!isset($_SESSION['user_name'])) {
 
                                         $result = mysql_query("SELECT * FROM user");
 
-                                        echo "<table style='border-style:groove; border-width:5px; color:#960; border-collapse:collapse; width:65%;margin-left:5.5%;background-color: white;'>
+                                        echo "<table style='border-style:groove; border-width:5px; color:#960; border-collapse:collapse; width:80%;margin-left:5.5%;background-color: white;'>
 <tr style='background-color: green; color:black;'>
 <th style='border-style:groove; border-width:2px;'>SERVICEID</th>
 <th style='border-style:groove; border-width:4px;'FIRST NAME</th>
@@ -67,9 +68,6 @@ if (!isset($_SESSION['user_name'])) {
 <th style='border-style:groove; border-width:2px;'>AGREED-AMOUNT</th>
 <th style='border-style:groove; border-width:2px;'>PAID</th>
 <th style='border-style:groove; border-width:2px;'>PHONE NUMBER</th>
-<th style='border-style:groove; border-width:2px;'>UPDATE PAID</th>
-<th style='border-style:groove; border-width:2px;'>EDIT</th>
-<th style='border-style:groove; border-width:2px;'>DELETE</th>
 
 </tr>";
 
@@ -85,24 +83,6 @@ if (!isset($_SESSION['user_name'])) {
    <td style='border-style:groove; border-width:2px;'>" . $row['paid'] . "</td>
     <td style='border-style:groove; border-width:2px;'>" . $row['phone'] . "</td>
    
-   
-  <td style='border-style:groove; border-width:2px;'>
-   <input type='hidden' name='serviceId' value='" . $row['serviceId'] . "'> 
-   <input type='submit' value='Update paid'>
-   </td>
-   </form>
-   <form action='editingform2.php' method='post'>
-  <td style='border-style:groove; border-width:2px;'>
-   <input type='hidden' name='serviceId' value='" . $row['serviceId'] . "'> 
-   <input type='submit' value='edit'>
-   </td>
-   </form>
-   <form action='deletingform2.php' method='post'>
-   <td style='border-style:groove; border-width:2px;'>
-   <input type='hidden' name='kk' value='" . $row['serviceId'] . "'>
-   <input type='submit' value='delete' onclick='return confirm(are you sure you want to delete ?)'</td>
-   </form>
-   
    ";
                                             ?>
                                             <?php
@@ -115,10 +95,11 @@ if (!isset($_SESSION['user_name'])) {
 
                             
                             <div id="footer">
-                                <h2>Pages</h2>
+							<fieldset color="green";>
+                                <legend><h2>Pages</h2></legend>
                                 <li><a href="receipt.php"> Receipt</a><br>
                                 <li><a href="logout.php">Logout</a>
-								<a href="administrator.php">back</a>
+								
                             </div>
                             <div id="footer1">
                                 <p>

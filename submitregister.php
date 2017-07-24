@@ -21,9 +21,9 @@ $execute = mysql_query($query);
 if ($execute) {
 
     echo "Data inserted";
-    Print '<script>="refresh" content="window.location.assign("index.php");</script>'; // redirects to login.php
+   header('Refresh: 1; url=index.php');
 } else {
     echo "There is a problem" . mysqli_error();
-    
+    header("Refresh:0; url=redirect_index.php");
 }
 ?>

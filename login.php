@@ -56,6 +56,7 @@ function validate()
 			<tr>
 				<th scope="row">&nbsp;</th>
 				<td><strong><a href="forgotpassword.php">Forgot Password</a></strong></td>
+				<td></th><a href="index.php">go back</a></td>
 			</tr>
 		</table>
 	</form>

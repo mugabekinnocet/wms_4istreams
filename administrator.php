@@ -9,8 +9,8 @@ if (!isset($_SESSION['username'])) {
 
 <style>
 #header {
-    background-color:black;
-    color:white;
+    background-color:blue;
+    color:yellow;
     text-align:center;
     padding:5px;
 }
@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
 #section {
     width:350px;
     float:left;
-    padding:10px; 
+    padding:20px; 
 }
 #footer1 {
     background-color:white;
@@ -35,13 +35,18 @@ if (!isset($_SESSION['username'])) {
     padding:5px; 
 }
 #footer {
-    background-color:black;
-    color:green;
+    background-color:green;
+    color:yellow;
     clear:both;
     text-align:center;
     padding:5px; 
 }
+ 
 </style>
+<head>
+<title>administrator</title>
+
+</head>
 <body>
 
 <div id="header">
@@ -55,43 +60,30 @@ if (!isset($_SESSION['username'])) {
 <br>
 </div>
 
-<div id="section">
-<h1>Technician</h1>
-<p>
-<UL>
-<li><a href="retrieve.php"><b>registered items</B> </a></li>
-<li><a href="retrieve.php"><b>progress report</B> </a></li>
-<li><a href="retrieve.php"><b>deadline reports</B> </a></li>
 
 
+<div id="section"  style="width:550px;height:250px;line-height:3em;overflow:scroll;padding:10px;">
 
-</ul>
-</p>
+<fieldset>
+<legend><h1>Pages</h1></legend>
 
-</div>
-
-<div id="section">
-<h1>Admin</h1>
 <p>
 <UL>
 <li><a href="technician.php"><b>Technicians</B> </a></li>
 <li><a href="finance.php"><b>Finance managers</B> </a></li>
 <li><a href="viewaccounts.php"><b>View Accounts</B> </a></li>
+<li><a href="retrieve.php"><b>registered items</B> </a></li>
+<li><a href="retrieve.php"><b>progress report</B> </a></li>
+<li><a href="retrieve.php"><b>deadline reports</B> </a></li>
 
 
 </ul>
+</fieldset>
 </p>
 </div>
 
-<div id="section">
-<h1>Finance</h1>
-<p>
-<UL>
-<li><a href="index.html"><b>Payments</B> </a></li>
-<li><a href="index.html"><b>Receipts</B> </a></li>
-</div>
 <div id="footer1">
-<a href="administrator.php">back</a>
+
 <a href="logout.php">Logout</a>
 </div>
 
